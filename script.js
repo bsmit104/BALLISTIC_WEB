@@ -1,66 +1,80 @@
-console.log('Script loaded!');
-document.addEventListener('DOMContentLoaded', function () {
-    const ball = document.getElementById('floating-ball');
+// let isMoving = false;
 
-    let isDragging = false;
-    let offsetX, offsetY;
-    let isFlinging = false;
-    let velocityX = 0;
-    let velocityY = 0;
+// function toggleMove() {
+//     const image = document.getElementById('movingImage');
+    
+//     if (isMoving) {
+//         image.classList.remove('move-right');
+//     } else {
+//         image.classList.add('move-right');
+//     }
 
-    ball.addEventListener('mousedown', startDragging);
-    document.addEventListener('mouseup', stopDragging);
-    document.addEventListener('mousemove', function (e) {
-        if (isDragging) {
-            const x = e.clientX - offsetX;
-            const y = e.clientY - offsetY;
+//     isMoving = !isMoving;
+// }
 
-            ball.style.left = x + 'px';
-            ball.style.top = y + 'px';
-        }
+// console.log('Script loaded!');
+// document.addEventListener('DOMContentLoaded', function () {
+//     const ball = document.getElementById('floating-ball');
 
-        if (isFlinging) {
-            velocityX = e.movementX;
-            velocityY = e.movementY;
-        }
-    });
-    document.addEventListener('mouseup', function () {
-        if (isFlinging) {
-            isFlinging = false;
+//     let isDragging = false;
+//     let offsetX, offsetY;
+//     let isFlinging = false;
+//     let velocityX = 0;
+//     let velocityY = 0;
 
-            function updatePosition() {
-                let x = ball.getBoundingClientRect().left + velocityX;
-                let y = ball.getBoundingClientRect().top + velocityY;
+//     ball.addEventListener('mousedown', startDragging);
+//     document.addEventListener('mouseup', stopDragging);
+//     document.addEventListener('mousemove', function (e) {
+//         if (isDragging) {
+//             const x = e.clientX - offsetX;
+//             const y = e.clientY - offsetY;
 
-                // Check boundaries
-                if (x < 0 || x + ball.offsetWidth > window.innerWidth) {
-                    velocityX = -velocityX;
-                }
+//             ball.style.left = x + 'px';
+//             ball.style.top = y + 'px';
+//         }
 
-                if (y < 0 || y + ball.offsetHeight > window.innerHeight) {
-                    velocityY = -velocityY;
-                }
+//         if (isFlinging) {
+//             velocityX = e.movementX;
+//             velocityY = e.movementY;
+//         }
+//     });
+//     document.addEventListener('mouseup', function () {
+//         if (isFlinging) {
+//             isFlinging = false;
 
-                ball.style.left = x + 'px';
-                ball.style.top = y + 'px';
+//             function updatePosition() {
+//                 let x = ball.getBoundingClientRect().left + velocityX;
+//                 let y = ball.getBoundingClientRect().top + velocityY;
 
-                if (isFlinging) {
-                    requestAnimationFrame(updatePosition);
-                }
-            }
+//                 // Check boundaries
+//                 if (x < 0 || x + ball.offsetWidth > window.innerWidth) {
+//                     velocityX = -velocityX;
+//                 }
 
-            updatePosition();
-        }
-    });
+//                 if (y < 0 || y + ball.offsetHeight > window.innerHeight) {
+//                     velocityY = -velocityY;
+//                 }
 
-    function startDragging(e) {
-        isDragging = true;
-        offsetX = e.clientX - ball.getBoundingClientRect().left;
-        offsetY = e.clientY - ball.getBoundingClientRect().top;
-    }
+//                 ball.style.left = x + 'px';
+//                 ball.style.top = y + 'px';
 
-    function stopDragging() {
-        isDragging = false;
-    }
-    console.log('Script ended!');
-});
+//                 if (isFlinging) {
+//                     requestAnimationFrame(updatePosition);
+//                 }
+//             }
+
+//             updatePosition();
+//         }
+//     });
+
+//     function startDragging(e) {
+//         isDragging = true;
+//         offsetX = e.clientX - ball.getBoundingClientRect().left;
+//         offsetY = e.clientY - ball.getBoundingClientRect().top;
+//     }
+
+//     function stopDragging() {
+//         isDragging = false;
+//     }
+//     console.log('Script ended!');
+// });

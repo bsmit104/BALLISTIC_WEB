@@ -6,6 +6,22 @@
   <title>BALLISTIC</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    /* Customize modal background color */
+    .modal-content {
+      background-color: #676aff; /* Replace with your preferred color code */
+    }
+
+    /* Customize modal title color */
+    .modal-title {
+      color: #ffffff; /* Replace with your preferred text color */
+    }
+
+    /* Customize modal body text color */
+    .modal-body {
+      color: #fffdfd; /* Replace with your preferred text color */
+    }
+  </style>
 </head>
 <body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -33,7 +49,7 @@
             <a class="nav-link" href="theprocess.html">The Process</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="theteam.html">theTeam</a>
+            <a class="nav-link" href="theteam.html">The Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -46,63 +62,250 @@
     </div>
   </nav>
 
+  <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/theprocess/workflow.PNG" alt="Your Image" class="img-fluid d-block mx-auto">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/theprocess/mapdesign.PNG" alt="Your Image" class="img-fluid d-block mx-auto">
+
+        <div class="container">
+          <div class="carousel-caption">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/theprocess/toonshader.PNG" alt="Your Image" class="img-fluid d-block mx-auto">
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+
   <div class="container text-center mt-4">
     <h1 class="display-2">ABOUT</h1>
   </div>
 
-  
+  <div class="container">
+    <hr class="featurette-divider">
 
-  <!-- <div id="carouselExample" class="carousel slide" style="max-width: 900px; margin: auto;">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/good.PNG" class="d-block w-100" alt="...">
+    <div class="col-md-12 text-center">
+      <p class="lead">Through the Computer Science Game Design BS program at UCSC, students are required to work on a capstone game in what is called "The 170 Series." Students form teams and make games that satisfy certain constraints.</p>
+    </div>
+
+    <!-- Modal Trigger Buttons -->
+    <!-- <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup1">- Make an accessible game</p>
+    <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup2">- Multiple Language support</p>
+    <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup3">- Playable on Cellular Network</p>
+    <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup4">- Vertical Slice</p> -->
+    <div class="row text-center">
+      <!-- Modal Trigger Buttons -->
+      <div class="col-md-3">
+          <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup1">- Accessibility</p>
       </div>
-      <div class="carousel-item">
-        <img src="assets/map.png" class="d-block w-100" alt="...">
+      <div class="col-md-3">
+          <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup2">- Localization</p>
       </div>
-      <div class="carousel-item">
-        <img src="assets/toon.png" class="d-block w-100" alt="...">
+      <div class="col-md-3">
+          <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup3">- Game Format</p>
+      </div>
+      <div class="col-md-3">
+          <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup4">- Vertical Slice</p>
+      </div>
+  </div>
+    <!-- Modals -->
+    <div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="popup1Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="popup1Label">Accessibility</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Make an accessible game:
+              able to play the game with 1 hand,
+              game must be playable without sound,
+              Game must come to a natural resting
+              point around every 2 minutes, game must be
+              completable even when simulating
+              vision limitations: contrast and color sensitivity
+              <br>
+              <br>
+              This constraint was satified with limited key components like ...
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+
+    <div class="modal fade" id="popup2" tabindex="-1" aria-labelledby="popup2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="popup2Label">Localization</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Game must have all visible
+              text localized to 2+ written
+              languages (one logographic, 
+              one right to left)
+              <br>
+              <br>
+              This constraint was satisfied by including 
+              Arabic and Chinese as avaialable languages 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="popup3" tabindex="-1" aria-labelledby="popup2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="popup2Label">Game Format</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Game must be an offline
+              digital game or an online mobile
+              game (able to play on cellular network).
+              <br>
+              <br>
+              The constraint was satisfied by using a cellular 
+              hotspot in order to connect host and servers, 
+              but the game is not available on mobile currently
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="popup4" tabindex="-1" aria-labelledby="popup2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="popup2Label">Vertical Slice</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>(meaning that the game must not be a full game but rather a small piece of a full game that properly details the tone for 
+              the rest of the game. A vertical slices of a game is one that can be scaled up to a full game (at least ideally) using only a lot more authoring effort. That is, 
+              a production team should be able to fill out the rest of the content to build the full game using only digital content creation tools like image/sound editors, model 
+              editors, level editors, and scripting languages.)
+              <br>
+              <br>
+              This constraint was satisfied by not including the other 30 possible maps, customizable characters, ball buffs, gameplay variations, customizable server settings, and more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- 
+  <div class="container">
+  <hr class="featurette-divider">
+
+  <div class="col-md-12 text-center">
+    <p class="lead">Through the Computer Science Game Design BS program at UCSC, students are required to work on a capstone game in what is called "The 170 Series." 
+      Students form teams and make games that satisfy certain constraints.<br>
+    </p>
+  </div>
+<p class="lead c" onclick="showPopup('popup1')">- Make an accessible game</p>
+<div id="popup1" class="popup" onclick="closePopup('popup1')">
+  <span class="close" onclick="closePopup('popup1')">&times;</span>
+  <p>Make an accessible game:
+    <br>able to play the game with 1 hand,
+    <br>game must be playable without sound,
+    <br>Game must come to a natural resting
+    <br>point around every 2 minutes, game must be
+    <br>completable even when simulating
+    <br>vision limitations: contrast and color sensitivity
+  </p>
 </div>
-<div class="container-fluid mt-4"style="max-width: 900px; margin: auto;">
-    <div class="bg-dark text-white p-4">
-      <h2 class="mb-3">Additional Information</h2>
-      <p>Les extraterrestres, sujets fascinants et mystérieux, 
-        alimentent depuis longtemps l'imaginaire humain. Bien 
-        que leur existence reste encore largement spéculative, 
-        de nombreux récits et témoignages suggèrent des rencontres 
-        éventuelles avec des êtres venus d'ailleurs. La possibilité 
-        d'une vie extraterrestre soulève des questions intrigantes 
-        sur l'univers infini qui nous entoure. Les chercheurs explorent 
-        activement des signaux extraterrestres potentiels et examinent 
-        des exoplanètes susceptibles d'abriter la vie. Que ce soit dans 
-        la science-fiction ou les enquêtes scientifiques, les aliens 
-        continuent d'éveiller la curiosité et de stimuler l'imagination 
-        collective, laissant le mystère persistant de savoir s'ils existent 
-        réellement quelque part dans l'immensité cosmique. 
-        Les extraterrestres, sujets fascinants et mystérieux, 
-        alimentent depuis longtemps l'imaginaire humain. Bien 
-        que leur existence reste encore largement spéculative, 
-        de nombreux récits et témoignages suggèrent des rencontres 
-        éventuelles avec des êtres venus d'ailleurs. La possibilité 
-        d'une vie extraterrestre soulève des questions intrigantes 
-        sur l'univers infini qui nous entoure. Les chercheurs explorent 
-        activement des signaux extraterrestres potentiels et examinent 
-        des exoplanètes susceptibles d'abriter la vie. Que ce soit dans 
-        la science-fiction ou les enquêtes scientifiques, les aliens 
-        continuent d'éveiller la curiosité et de stimuler l'imagination 
-        collective, laissant le mystère persistant de savoir s'ils existent 
-        réellement quelque part dans l'immensité cosmique.</p>
-    </div>
-  </div> -->
+
+<p class="lead c" onclick="showPopup('popup2')">- Multiple Language support</p>
+<div id="popup2" class="popup" onclick="closePopup('popup2')">
+  <span class="close" onclick="closePopup('popup2')">&times;</span>
+  <p>Game must have all visible
+    <br>text localized to 2+ written
+    <br>languages (one logographic, 
+    <br>one right to left)
+  </p>
+</div>
+
+<p class="lead c" onclick="showPopup('popup3')">- Playable on Cellular Network</p>
+<div id="popup3" class="popup" onclick="closePopup('popup3')">
+  <span class="close" onclick="closePopup('popup3')">&times;</span>
+  <p>Game must be an offline
+    <br> digital game or an online mobile
+    <br>game (able to play on cellular network)
+  </p>
+</div>
+
+<p class="lead c" onclick="showPopup('popup4')">- Vertical Slice</p>
+<div id="popup4" class="popup" onclick="closePopup('popup4')">
+  <span class="close" onclick="closePopup('popup4')">&times;</span>
+  <p>(meaning that the game must not be a full game but rather a small piece of a full game that properly details the tone for 
+    the rest of the game. A vertical slices of a game is one that can be scaled up to a full game (at least ideally) using only a lot more authoring effort. That is, 
+    a production team should be able to fill out the rest of the content to build the full game using only digital content creation tools like image/sound editors, model 
+    editors, level editors, and scripting languages.)
+  </p>
+</div> -->
+
+<!-- <div class="container text-center mt-4">
+  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/toon.png" alt="Your Image Description" width="500" height="500">
+</div> -->
+<!-- <script>
+  function showPopup(popupId) {
+    document.getElementById(popupId).style.display = "block";
+  }
+  
+  function closePopup(popupId) {
+    document.getElementById(popupId).style.display = "none";
+  }
+</script> -->
 </body>
 </html>
+
+    <!-- - Game must come to a natural resting point around every 2 minutes, game must be completable even when simulating vision limitations: contrast and color sensitivity)<br>
+    - Game must have all visible text localized to 2+ written languages (one logographic, one right to left)<br>
+    - Game must be an offline digital game or an online mobile game (able to play on cellular network)
+    - Game must be a vertical slice (meaning that the game must not be a full game but rather a small piece of a full game that properly details the tone for 
+    the rest of the game. A vertical slices of a game is one that can be scaled up to a full game (at least ideally) using only a lot more authoring effort. That is, 
+    a production team should be able to fill out the rest of the content to build the full game using only digital content creation tools like image/sound editors, model 
+    editors, level editors, and scripting languages.) -->
+
+          <!-- <p class="lead">Through the Computer Science Game Design BS program at UCSC, students are required to work on a capstone game in what is called "The 170 Series." 
+        Students form teams and make games that satisfy certain constraints. Our constraints included making a vertical slice of a bigger game that<br>
+      - Implement inclusive design by satisfying the accessibility requirement (able to play the game with 1 hand, game must be playable without soud, 
+      game must come to a natural resting point around every 2 minutes, game must be completable even when simulating vision limitations: contrast and color sensitivity)<br>
+      - Game must have all visible text localized to 2+ written languages (one logographic, one right to left)<br>
+      - Game must be an offline digital game or an online mobile game (able to play on cellular network)
+      - Game must be a vertical slice (meaning that the game must not be a full game but rather a small piece of a full game that properly details the tone for 
+      the rest of the game. A vertical slices of a game is one that can be scaled up to a full game (at least ideally) using only a lot more authoring effort. That is, 
+      a production team should be able to fill out the rest of the content to build the full game using only digital content creation tools like image/sound editors, model 
+      editors, level editors, and scripting languages.)
+    </p> -->
