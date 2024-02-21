@@ -7,23 +7,34 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <style>
-    /* Customize modal background color */
+
+    .readable-text {
+      color: #000000;
+        line-height: 1;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
     .modal-content {
-      background-color: #676aff; /* Replace with your preferred color code */
+      background-color: #676aff;
     }
 
-    /* Customize modal title color */
     .modal-title {
-      color: #ffffff; /* Replace with your preferred text color */
+      color: #ffffff;
     }
 
-    /* Customize modal body text color */
     .modal-body {
-      color: #fffdfd; /* Replace with your preferred text color */
+      color: #fffdfd;
     }
   </style>
 </head>
 <body>
+  <!-- .col-md-12 p.lead {
+    color: #000000;
+    line-height: 1;
+    font-size: 25px;
+    font-weight: bold;
+  } -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -62,64 +73,22 @@
     </div>
   </nav>
 
-  <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/theprocess/workflow.PNG" alt="Your Image" class="img-fluid d-block mx-auto">
-
-        <div class="container">
-          <div class="carousel-caption text-start">
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="assets/theprocess/mapdesign.PNG" alt="Your Image" class="img-fluid d-block mx-auto">
-
-        <div class="container">
-          <div class="carousel-caption">
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="assets/theprocess/toonshader.PNG" alt="Your Image" class="img-fluid d-block mx-auto">
-
-        <div class="container">
-          <div class="carousel-caption text-end">
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div> -->
-
-  <div class="container text-center mt-4">
+  <div class="text-center header-container">
     <h1 class="display-2">ABOUT</h1>
   </div>
 
   <div class="container">
-    <hr class="featurette-divider">
+    <!-- <hr class="featurette-divider"> -->
 
-    <div class="col-md-12 text-center">
-      <p class="lead">Through the Computer Science Game Design BS program at UCSC, students are required to work on a capstone game in what is called "The 170 Series." Students form teams and make games that satisfy certain constraints.</p>
+    <div class="col-md-12 mt-4 mb-4 text-center readable-text">
+      <p class="lead"><b>Through the Computer Science Game Design BS 
+        program at UCSC, students are required to work on a capstone 
+        game in what is called "The 170 Series." Students form teams 
+        and make games that satisfy certain constraints.</b></p>
     </div>
 
-    <!-- Modal Trigger Buttons -->
-    <!-- <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup1">- Make an accessible game</p>
-    <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup2">- Multiple Language support</p>
-    <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup3">- Playable on Cellular Network</p>
-    <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup4">- Vertical Slice</p> -->
+    <hr class="featurette-divider">
+
     <div class="row text-center">
       <!-- Modal Trigger Buttons -->
       <div class="col-md-3">
@@ -224,69 +193,6 @@
         </div>
       </div>
     </div>
-<!-- 
-  <div class="container">
-  <hr class="featurette-divider">
-
-  <div class="col-md-12 text-center">
-    <p class="lead">Through the Computer Science Game Design BS program at UCSC, students are required to work on a capstone game in what is called "The 170 Series." 
-      Students form teams and make games that satisfy certain constraints.<br>
-    </p>
-  </div>
-<p class="lead c" onclick="showPopup('popup1')">- Make an accessible game</p>
-<div id="popup1" class="popup" onclick="closePopup('popup1')">
-  <span class="close" onclick="closePopup('popup1')">&times;</span>
-  <p>Make an accessible game:
-    <br>able to play the game with 1 hand,
-    <br>game must be playable without sound,
-    <br>Game must come to a natural resting
-    <br>point around every 2 minutes, game must be
-    <br>completable even when simulating
-    <br>vision limitations: contrast and color sensitivity
-  </p>
-</div>
-
-<p class="lead c" onclick="showPopup('popup2')">- Multiple Language support</p>
-<div id="popup2" class="popup" onclick="closePopup('popup2')">
-  <span class="close" onclick="closePopup('popup2')">&times;</span>
-  <p>Game must have all visible
-    <br>text localized to 2+ written
-    <br>languages (one logographic, 
-    <br>one right to left)
-  </p>
-</div>
-
-<p class="lead c" onclick="showPopup('popup3')">- Playable on Cellular Network</p>
-<div id="popup3" class="popup" onclick="closePopup('popup3')">
-  <span class="close" onclick="closePopup('popup3')">&times;</span>
-  <p>Game must be an offline
-    <br> digital game or an online mobile
-    <br>game (able to play on cellular network)
-  </p>
-</div>
-
-<p class="lead c" onclick="showPopup('popup4')">- Vertical Slice</p>
-<div id="popup4" class="popup" onclick="closePopup('popup4')">
-  <span class="close" onclick="closePopup('popup4')">&times;</span>
-  <p>(meaning that the game must not be a full game but rather a small piece of a full game that properly details the tone for 
-    the rest of the game. A vertical slices of a game is one that can be scaled up to a full game (at least ideally) using only a lot more authoring effort. That is, 
-    a production team should be able to fill out the rest of the content to build the full game using only digital content creation tools like image/sound editors, model 
-    editors, level editors, and scripting languages.)
-  </p>
-</div> -->
-
-<!-- <div class="container text-center mt-4">
-  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/toon.png" alt="Your Image Description" width="500" height="500">
-</div> -->
-<!-- <script>
-  function showPopup(popupId) {
-    document.getElementById(popupId).style.display = "block";
-  }
-  
-  function closePopup(popupId) {
-    document.getElementById(popupId).style.display = "none";
-  }
-</script> -->
 </body>
 </html>
 

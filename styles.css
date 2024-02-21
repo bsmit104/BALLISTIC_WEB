@@ -103,23 +103,51 @@
 	font-size: 20px;
 	cursor: pointer;
   }
+
+  /* p {
+	color: #000000;
+	line-height: 1;
+	font-size: 25px;
+	font-weight: bold;
+  } */
   
-/* Add this style to your existing styles.css or within the <style> tag in the head of your HTML */
 .container .c {
 	position: relative;
 	padding: auto;
 	border-radius: 50%;
 	shape-outside: circle();
 	margin: auto;
-	width: 200px; /* Set a fixed width for symmetry */
-	height: 200px; /* Set a fixed height for symmetry */
-	background-color: #007bff; /* Add your preferred background color */
-	color: white; /* Add your preferred text color */
-	display: inline-block; /* Ensure the circle takes only the necessary space */
-	text-align: center; /* Center the text horizontally */
-	line-height: 200px; /* Center the text vertically */
+	width: 200px;
+	height: 200px;
+	background-color: #ab2b22;
+	color: white;
+	display: inline-block;
+	text-align: center;
+	line-height: 200px;
+	border: 5px solid #000000;
   }
+
+  .container .c:hover {
+	background-color: #ef2923;
+  }
+
+  .header-container {
+	background-image: radial-gradient(50% 176%, #4678c4 80%, #065e87 40%);
+    /* background-color: #75acfe; */
+    color: #000000; /* Optionally, set the text color */
+    padding: 20px;
+	}
+
+  /* .readable-text {
+	color: #000000;
+    line-height: 1;
+    font-size: 25px;
+    font-weight: bold;
+  } */
   
 /* .modal-content {
     background-color: #8091f1;
 } */
+
+
+/* consulted chatgpt for styling help sometimes */
