@@ -1,0 +1,2 @@
+assets/theprocess/LOFI.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/theprocess/HIFI.mp4 filter=lfs diff=lfs merge=lfs -text
