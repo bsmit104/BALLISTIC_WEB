@@ -150,4 +150,35 @@
 } */
 
 
+/*download page*/
+@keyframes bounce {
+	0%, 100% {
+	  transform: translateY(0); /* Start and end position: no translation */
+	}
+	50% {
+	  transform: translateY(-5px); /* Middle position: translate up by 5 pixels */
+	}
+  }
+
+  a img {
+	animation: bounce 2s ease infinite; /* Name, duration, timing function, iteration count */
+	transition: filter 0.3s ease;
+  }
+
+  a:hover img {
+    filter: brightness(150%) hue-rotate(180deg);
+}
+/* Define keyframes for hue rotation */
+/* @keyframes rotate-hue {
+	0% { filter: brightness(150%) hue-rotate(180deg); }
+	25% { filter: brightness(150%) hue-rotate(90deg); }
+	50% { filter: brightness(150%) hue-rotate(40deg); }
+	75% { filter: brightness(150%) hue-rotate(150deg); }
+	100% { filter: brightness(150%) hue-rotate(180deg); }
+  } */
+  
+  /* Apply alternating hover effect using keyframes */
+  /* .a-icon:hover {
+	animation: rotate-hue 2s infinite alternate;
+  } */
 /* consulted chatgpt for styling help sometimes */
