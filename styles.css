@@ -168,6 +168,20 @@
   a:hover img {
     filter: brightness(150%) hue-rotate(180deg);
 }
+
+@keyframes bounce {
+	0%, 100% {
+	  transform: translateY(0);
+	}
+	50% {
+	  transform: translateY(-10px);
+	}
+  }
+  
+  .bounce-container {
+	animation: bounce 2s infinite alternate;
+  }
+  
 /* Define keyframes for hue rotation */
 /* @keyframes rotate-hue {
 	0% { filter: brightness(150%) hue-rotate(180deg); }
