@@ -196,3 +196,13 @@
 	animation: rotate-hue 2s infinite alternate;
   } */
 /* consulted chatgpt for styling help sometimes */
+
+.cool-border {
+    border: 10px solid #2c7db2; /* Solid blue border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* html, body {
+	background-color: rgb(184, 194, 255) !important;
+  } */

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BALLISTIC</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+
+    .readable-text {
+      color: #000000;
+        line-height: 1;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+    .modal-content {
+      background-color: #676aff;
+    }
+
+    .modal-title {
+      color: #ffffff;
+    }
+
+    .modal-body {
+      color: #fffdfd;
+    }
+  </style>
+</head>
+<body>
+  <!-- .col-md-12 p.lead {
+    color: #000000;
+    line-height: 1;
+    font-size: 25px;
+    font-weight: bold;
+  } -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+    <div class="container">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">BALLISTIC</a>
+
+      <!-- Toggler/collapsible Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="vertslice.html">Vertical Slice</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="theprocess.html">The Process</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="theteam.html">The Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="download.html">Download</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="text-center header-container">
+    <h1 class="display-2">THE VERTICAL SLICE (QUARTER 1)</h1>
+  </div>
+
+  <div class="container">
+    <!-- <hr class="featurette-divider"> -->
+
+    <div class="col-md-12 mt-4 mb-4 text-center readable-text">
+      <p class="lead"><b>Through the Computer Science Game Design BS 
+        program at UCSC, students are required to work on a capstone 
+        game in what is called "The 170 Series." Students form teams 
+        and make games that satisfy certain constraints. In the first quarter
+        of production for BALLISTIC we were assigned the task of making a vertical slice
+        that had to be accepted to move forward into the following class, Production. The 
+        purpose of a vertical slice is to display a concise representative fraction of the 
+        bigger game in order to convey the main feel and gameplay that would be
+        present if the game moves forward, answering the most important question of
+        "Is this game fun?"
+        <br>
+        <br>
+        The constraints were as follows:
+        </b></p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row text-center">
+      <!-- Modal Trigger Buttons -->
+      <div class="col-md-3">
+        <div class="bounce-container">
+          <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup1">- Accessibility</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="bounce-container">
+          <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup2">- Localization</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="bounce-container">
+          <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup3">- Game Format</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="bounce-container">
+          <p class="lead c" data-bs-toggle="modal" data-bs-target="#popup4">- Vertical Slice</p>
+        </div>
+      </div>
+  </div>
+    <!-- Modals -->
+    <div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="popup1Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="popup1Label">Accessibility</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Make an accessible game:
+              able to play the game with 1 hand,
+              game must be playable without sound,
+              Game must come to a natural resting
+              point around every 2 minutes, game must be
+              completable even when simulating
+              vision limitations: contrast and color sensitivity
+              <br>
+              <br>
+              This constraint was satified with limited key components like limited buttons for 
+              play, no critical audio advantages regarding sound, and a grey scale playable option. 
+              The game also has limited level sizes to allow for 2 minute rounds but also enough space 
+              to wander off to safety in level. If you fail, no pressure either because rounds are short 
+              and each round is its own game. Basically AFK doesnt affect your experience cause around 
+              every 2 minutes someone will win then the next game starts after some win screens!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="popup2" tabindex="-1" aria-labelledby="popup2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="popup2Label">Localization</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Game must have all visible
+              text localized to 2+ written
+              languages (one logographic, 
+              one right to left)
+              <br>
+              <br>
+              This constraint was satisfied by including 
+              Arabic and Chinese as available languages.
+              We also included Spanish as a bonus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="popup3" tabindex="-1" aria-labelledby="popup2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="popup2Label">Game Format</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Game must be an offline
+              digital game or an online mobile
+              game (able to play on cellular network).
+              <br>
+              <br>
+              The constraint was satisfied by using a cellular 
+              hotspot in order to connect host and servers, 
+              but the game is not available on mobile currently
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="popup4" tabindex="-1" aria-labelledby="popup2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="popup2Label">Vertical Slice</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>(meaning that the game must not be a full game but rather a small piece of a full game that properly details the tone for 
+              the rest of the game. A vertical slices of a game is one that can be scaled up to a full game (at least ideally) using only a lot more authoring effort. That is, 
+              a production team should be able to fill out the rest of the content to build the full game using only digital content creation tools like image/sound editors, model 
+              editors, level editors, and scripting languages.)
+              <br>
+              <br>
+              This constraint was satisfied by not including the other 30 possible maps, customizable characters, ball buffs, gameplay variations, customizable server settings, and more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="container">
+        <hr class="featurette-divider">
+      
+        <div class="row featurette">
+          <div class="col-md-4">
+            <h2 class="featurette-heading">Localization</h2>
+            <p class="lead">Our game supports Spanish, Chinese, and Arabic. You can see more about how this has been achieved <a href="https://docs.google.com/document/d/1ZCHDkiZ5ZuzZWcaP_3RQLl2VFxDGYgH7nz5D4HEmZ84/edit?usp=sharing" target="_blank">here</a>.</p>
+          </div>
+          <div class="col-md-4">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/localize/localization1.PNG" alt="Your Image Description" width="400" height="400">
+          </div>
+          <div class="col-md-4">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/localize/localization3.PNG" alt="Your Image Description" width="400" height="400">
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <hr class="featurette-divider">
+    
+      <!-- <div class="row featurette">
+        <div class="col-md-4">
+          <h2 class="featurette-heading">Accessibility</h2>
+          <p class="lead">Our game supports one handed play, grayscale, and can be played without audio. More <a href="https://docs.google.com/document/d/1cln_MX66x81NzTanmOmyP-yWHV9L-rSJ3yifDbPK8eA/edit?usp=sharing" target="_blank">here</a>.</p>
+        </div>
+        <div class="col-md-4">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/grey/gray.PNG" alt="Your Image Description" width="400" height="400">
+        </div>
+        <div class="col-md-4">
+            <video width="100%" height="315" controls>
+                <source src="assets/grey/grey.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+      </div> -->
+      <div class="row featurette">
+        <div class="col-md-4">
+          <h2 class="featurette-heading">Accessibility</h2>
+          <p class="lead">Our game supports one-handed play, grayscale, and can be played without audio. More <a href="https://docs.google.com/document/d/1cln_MX66x81NzTanmOmyP-yWHV9L-rSJ3yifDbPK8eA/edit?usp=sharing" target="_blank">here</a>.</p>
+        </div>
+        <div class="col-md-4">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/grey/gray2.PNG" alt="Your Image Description" width="400" height="315">
+        </div>
+        <div class="col-md-4">
+          <video width="400" height="315" controls>
+            <source src="assets/grey/grey.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+  </div>
+
+  <div class="container">
+    <hr class="featurette-divider">
+  
+    <div class="row featurette">
+      <div class="col-md-4">
+        <h2 class="featurette-heading">Vertical Slice</h2>
+        <p class="lead">This is only a early part of the game. Just a small piece to display a larger representation of what the game could be. More <a href="https://docs.google.com/document/d/13JkCCBXJq4zw4S3JQIPTcb_PsjmQlfk27ODlVJamz9Y/edit?usp=sharing" target="_blank">here</a>.</p>
+      </div>
+      <div class="col-md-7">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/gamepics/action_shot3.jpg" alt="Your Image Description" width="400" height="400">
+      </div>
+      <!-- <div class="col-md-4">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/localize/localization3.PNG" alt="Your Image Description" width="400" height="400">
+      </div> -->
+    </div>
+</div>
+
+<div class="container">
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-4">
+      <h2 class="featurette-heading">Game Format</h2>
+      <p class="lead">Our game can be played on cellular networks and regular networks. The game is only playable on the computer right now. More <a href="https://docs.google.com/document/d/1cln_MX66x81NzTanmOmyP-yWHV9L-rSJ3yifDbPK8eA/edit?usp=sharing" target="_blank">here</a>.</p>
+    </div>
+    <div class="col-md-4">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/gameformat/hostjoin.PNG" alt="Your Image Description" width="400" height="400">
+    </div>
+    <div class="col-md-4">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/gameformat/join.PNG" alt="Your Image Description" width="400" height="400">
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+    <!-- - Game must come to a natural resting point around every 2 minutes, game must be completable even when simulating vision limitations: contrast and color sensitivity)<br>
+    - Game must have all visible text localized to 2+ written languages (one logographic, one right to left)<br>
+    - Game must be an offline digital game or an online mobile game (able to play on cellular network)
+    - Game must be a vertical slice (meaning that the game must not be a full game but rather a small piece of a full game that properly details the tone for 
+    the rest of the game. A vertical slices of a game is one that can be scaled up to a full game (at least ideally) using only a lot more authoring effort. That is, 
+    a production team should be able to fill out the rest of the content to build the full game using only digital content creation tools like image/sound editors, model 
+    editors, level editors, and scripting languages.) -->
+
+          <!-- <p class="lead">Through the Computer Science Game Design BS program at UCSC, students are required to work on a capstone game in what is called "The 170 Series." 
+        Students form teams and make games that satisfy certain constraints. Our constraints included making a vertical slice of a bigger game that<br>
+      - Implement inclusive design by satisfying the accessibility requirement (able to play the game with 1 hand, game must be playable without soud, 
+      game must come to a natural resting point around every 2 minutes, game must be completable even when simulating vision limitations: contrast and color sensitivity)<br>
+      - Game must have all visible text localized to 2+ written languages (one logographic, one right to left)<br>
+      - Game must be an offline digital game or an online mobile game (able to play on cellular network)
+      - Game must be a vertical slice (meaning that the game must not be a full game but rather a small piece of a full game that properly details the tone for 
+      the rest of the game. A vertical slices of a game is one that can be scaled up to a full game (at least ideally) using only a lot more authoring effort. That is, 
+      a production team should be able to fill out the rest of the content to build the full game using only digital content creation tools like image/sound editors, model 
+      editors, level editors, and scripting languages.)
+    </p> -->
